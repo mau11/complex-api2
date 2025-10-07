@@ -1,22 +1,42 @@
-# 📊 Project: Complex API 2
+# Baby Name Selector App
 
-### Goal: Use data returned from one api to make a request to another api and display the data returned
+> Get inspired to choose the perfect baby name by checking out related songs.
 
-### How to submit your code for review:
+> <img src="./images/screenshot.png" alt="Screenshot of completed Baby Name Selector API App" width="500">
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## Table of Contents
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+1. [Tech Stack](#tech-stack)
+1. [Development](#development)
+   1. [Baby Names API](#baby-names-api)
+   1. [Spotify API](#spotify-api)
+   1. [Notes](#notes)
+
+## Tech Stack
+
+- **HTML**
+- **CSS**
+- **JavaScript**
+
+## Development
+
+### Baby Names API
+
+- Obtain a free API key from API Ninjas at: https://api-ninjas.com/.
+- Update the `API_NINJA_KEY` value with your key on line 1 of main.js.
+
+### Spotify API
+
+- Obtain your free `CLIENT_ID` and `CLIENT_SECRET` from Spotify at: https://developer.spotify.com/documentation/web-api.
+- In the terminal, run the following command to get a temporary access token, replacing `CLIENT_ID` and `CLIENT_SECRET` accordingly (tokens expire in one hour). See https://developer.spotify.com/documentation/web-api/tutorials/client-credentials-flow for more information.
+
+  `curl -X POST "https://accounts.spotify.com/api/token" \
+-H "Content-Type: application/x-www-form-urlencoded" \
+-d "grant_type=client_credentials&client_id=CLIENT_ID&client_secret=CLIENT_SECRET"`
+
+- Update the `SPOTIFY_TOKEN` value with your generated token on line 2 of main.js.
+- Open the app in your browser, select a gender, pick a name and get inspired!
+
+### Notes
+
+Visit the official API Ninjas' Baby Names documentation at https://api-ninjas.com/api/babynames and the Spotify documentation at https://developer.spotify.com/documentation/web-api/ for more information on API use, copyright, and rate limitations.
